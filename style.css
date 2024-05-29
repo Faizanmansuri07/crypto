@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito sans';
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f8fb;
+    height: 60px;
+    padding: 0px 100px;
+}
+.navbar img{
+    width: 50px;
+    margin-right: 40px;
+}
+.navbar span{
+    display: none;
+    font-size: 1.5rem;
+    color: #18A8FB;
+    cursor: pointer;
+}
+.items li{
+    cursor: pointer;
+}
+.items{
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    color: #181b2a;
+}
+.items li:hover{
+  color: #18A8FB;
+}
+
+.right img{
+    width: 85%;
+    animation: upAndDown 2s infinite 0.5ms;
+}
+.right , .left {
+    width: 50%;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+#explor{
+    margin-top: 20px;
+    border: 1px solid #18A8FB;
+    outline: none;
+    padding:  5px 10px;
+    border-radius: 20px;
+    color: #18A8FB;
+    transition: all 0.3s ease-in-out 0.5ms;
+    font-weight: 500;
+}
+#explor:hover{
+    background: #18A8FB;
+    color: black;
+}
+.head{
+    font-size: 3rem;
+}
+#discription{
+    margin-top: 5px;
+}
+#element{
+    color: #18A8FB;
+}
+.sub-main{
+    margin-top: 85px;
+    display: flex;
+    gap: 70px;
+   
+    flex-wrap: wrap;
+}
+.items2{
+    display: none;
+    height: 0;
+}
+
+.show{
+    animation: show 0.3s ease-in-out 0.5ms;
+}
+@keyframes show {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 150px;
+    }
+    
+}
+@keyframes upAndDown {
+    0% {
+        position: relative;
+        top: 0px;
+    }
+    50% {
+        position: relative;
+        top: 30px;
+    }
+    100% {
+        position: relative;
+        top: 0;
+    }
+}
+.bitcoin{
+    display: flex;
+    align-items: center;
+    border: 2px solid #18A8FB;
+    justify-content: center;
+    width: 160px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #18A8FB;
+    cursor: pointer;
+    font-size: 13px;
+}
+.bitcoin img{
+    width: 40px;
+    margin-right: 8px;
+}
+.navbar i{
+    display: none;
+}
+@media(max-width : 555px) {
+    .navbar{
+        padding: 0px 20px;
+    }
+  .navbar  i{
+        display: block;
+        color: #18A8FB;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .main{
+        flex-wrap: wrap;
+        padding: 30px 20px;
+    }
+    .right , .left{
+        width: 100%;
+    }
+    .head{
+        font-size: 1.8rem;
+    }
+    .items, .lang{
+        display: none;
+    }
+    .items2{
+        padding: 10px 30px;
+        background-color: #f8f8fb;
+    }
+    .items2 li{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .items2 li:hover{
+        color: #18A8FB;
+    }
+    .right img{
+        width: 300px;
+        margin-top: 10px;
+     
+    }
+    .sub-main{
+        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+    .bitcoin{
+        width: 130px;
+    }
+
+}
+@media(max-width : 350px) {
+    .right img{
+        width: 250px;
+    }
+    i{
+        display: block;
+    }
+}
